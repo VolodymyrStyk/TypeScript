@@ -12,21 +12,21 @@ import {Deputy} from "./classes/Deputy";
 // чесності депутата. Якщо чесність більше 50 він не може брати хабар
 // takeMoney(sum) - метод дачі хабаря, де sum - сума яку ви пропонуєте депутату.
 //
-const ivan: Deputy = new Deputy('ivan', 33, 'male', 10, 100);
-const petro: Deputy = new Deputy('petro', 23, 'male', 60, 1000);
-const vasya: Deputy = new Deputy('vasya', 45, 'male', 33, 580);
+const ivan = new Deputy('ivan', 33, 'male', 10, 100);
+const petro = new Deputy('petro', 23, 'male', 60, 1000);
+const vasya = new Deputy('vasya', 45, 'male', 33, 580);
 
-const mykola: Deputy = new Deputy('mykola', 23, 'male', 12, 1100);
-const viktor: Deputy = new Deputy('viktor', 45, 'male', 56, 500);
-const olya: Deputy = new Deputy('olya', 25, 'female', 10, 1000);
+const mykola = new Deputy('mykola', 23, 'male', 12, 1100);
+const viktor = new Deputy('viktor', 45, 'male', 56, 500);
+const olya = new Deputy('olya', 25, 'female', 10, 1000);
 
-const taras: Deputy = new Deputy('taras', 60, 'male', 60, 1000);
-const igor: Deputy = new Deputy('igor', 55, 'male', 33, 50);
-const vova: Deputy = new Deputy('vova', 27, 'male', 88, 1100);
+const taras = new Deputy('taras', 60, 'male', 60, 1000);
+const igor = new Deputy('igor', 55, 'male', 33, 50);
+const vova = new Deputy('vova', 27, 'male', 88, 1100);
 
-const olena: Deputy = new Deputy('olena', 32, 'female', 3, 500);
-const vika: Deputy = new Deputy('vika', 33, 'female', 1, 500);
-const maria: Deputy = new Deputy('maria', 45, 'female', 2, 500);
+const olena = new Deputy('olena', 32, 'female', 3, 500);
+const vika = new Deputy('vika', 33, 'female', 1, 500);
+const maria = new Deputy('maria', 45, 'female', 2, 500);
 //
 // створюємо партії class Party маємо заповнти 3 поля для партії.
 // name - задаємо імя партії string
@@ -38,11 +38,11 @@ const maria: Deputy = new Deputy('maria', 45, 'female', 2, 500);
 // showAllWhotakeMoney() - показує всіх хабарників партії
 // showMoneyTakerSuperstar() - виводить головного хабарника партії.
 //
-const zeleno: Party = new Party('Zeleno', ivan, [ivan, petro, vasya]);
-const molodo: Party = new Party('Molodo', mykola, [mykola, olya]);
+const zeleno = new Party('Zeleno', ivan, [ivan, petro, vasya]);
+const molodo = new Party('Molodo', mykola, [mykola, olya]);
 molodo.addNewDeputy(viktor);
-const pravda: Party = new Party('Pravda', vova, [taras, igor, vova]);
-const nepravda: Party = new Party('Nepravda', maria, [olena, vika, maria]);
+const pravda = new Party('Pravda', vova, [taras, igor, vova]);
+const nepravda = new Party('Nepravda', maria, [olena, vika, maria]);
 nepravda.showAllWhoTakeMoney();
 //
 // створюємо партії class VerkhovnaRada маємо задати 2 поля.
@@ -54,7 +54,7 @@ nepravda.showAllWhoTakeMoney();
 // showSomeParty(Party) - дозволяє вивести конкретну партії з Ради
 // showMoneyTakerSuperstarOfAll() - виводить головного хабарника Ради.
 //
-const verhovnaRadaI: VerkhovnaRada = new VerkhovnaRada([zeleno, pravda, nepravda], mykola);
+const verhovnaRadaI = new VerkhovnaRada([zeleno, pravda, nepravda], mykola);
 verhovnaRadaI.addNewParty(molodo);
 verhovnaRadaI.showMoneyTakerSuperstarOfAll();
 console.log(verhovnaRadaI.showMoneyTakerSuperstarOfAll());
