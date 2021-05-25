@@ -1,32 +1,33 @@
 import {VerkhovnaRada} from "./classes/VerkhovnaRada";
 import {Party} from "./classes/Party";
 import {Deputy} from "./classes/Deputy";
+import {Gender} from "./enums/GenderEnum";
 
 // створюємо депутатів class Deputy маємо заповнити 5 полів для депутата.
 // name - задаємо імя string
 // age - задаємо вік number
-// gender - задаємо стать string ('male','female')
+// gender - задаємо стать Enum Gender: ('male','female')
 // onestyLevel - задаємо на скільки чесний number (0-100);
 // minSum - мінімальна сума хабаря.
 // isTakeMoney - boolean чи може депутат брати хабар, формується автоматично в залежності від
 // чесності депутата. Якщо чесність більше 50 він не може брати хабар
 // takeMoney(sum) - метод дачі хабаря, де sum - сума яку ви пропонуєте депутату.
 //
-const ivan = new Deputy('ivan', 33, 'male', 10, 100);
-const petro = new Deputy('petro', 23, 'male', 60, 1000);
-const vasya = new Deputy('vasya', 45, 'male', 33, 580);
+const ivan = new Deputy('ivan', 33, Gender.MALE, 10, 100);
+const petro = new Deputy('petro', 23, Gender.MALE, 60, 1000);
+const vasya = new Deputy('vasya', 45, Gender.MALE, 33, 580);
 
-const mykola = new Deputy('mykola', 23, 'male', 12, 1100);
-const viktor = new Deputy('viktor', 45, 'male', 56, 500);
-const olya = new Deputy('olya', 25, 'female', 10, 1000);
+const mykola = new Deputy('mykola', 23, Gender.MALE, 12, 1100);
+const viktor = new Deputy('viktor', 45, Gender.MALE, 56, 500);
+const olya = new Deputy('olya', 25, Gender.FEMALE, 10, 1000);
 
-const taras = new Deputy('taras', 60, 'male', 60, 1000);
-const igor = new Deputy('igor', 55, 'male', 33, 50);
-const vova = new Deputy('vova', 27, 'male', 88, 1100);
+const taras = new Deputy('taras', 60, Gender.MALE, 60, 1000);
+const igor = new Deputy('igor', 55, Gender.MALE, 33, 50);
+const vova = new Deputy('vova', 27, Gender.MALE, 88, 1100);
 
-const olena = new Deputy('olena', 32, 'female', 3, 500);
-const vika = new Deputy('vika', 33, 'female', 1, 500);
-const maria = new Deputy('maria', 45, 'female', 2, 500);
+const olena = new Deputy('olena', 32, Gender.FEMALE, 3, 500);
+const vika = new Deputy('vika', 33, Gender.FEMALE, 1, 500);
+const maria = new Deputy('maria', 45, Gender.FEMALE, 2, 500);
 //
 // створюємо партії class Party маємо заповнти 3 поля для партії.
 // name - задаємо імя партії string

@@ -1,12 +1,14 @@
+import {Gender} from "../enums/GenderEnum";
+
 export class Deputy {
     name: string;
     age: number;
-    gender: string = 'input male or female'; //'Male' || 'Female'
+    gender: Gender ; //'Male' || 'Female'
     onestyLevel: number; // 0-100
     minSum: number;
     isTakeMoney: boolean;
 
-    constructor(name: string, age: number, gender: string, onestyLevel: number, minSum: number) {
+    constructor(name: string, age: number, gender: Gender, onestyLevel: number, minSum: number) {
         this.name = name;
         this.age = age;
         this.gender = gender;
