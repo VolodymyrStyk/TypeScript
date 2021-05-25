@@ -15,3 +15,13 @@ let wife = new Wife('oksana', 33);
 let user = new User('andrii', 33, ['qwe', 'asd'], wife);
 
 foo(user);
+
+interface IUser {
+    name: string,
+    age: number
+}
+
+let petro: IUser = {
+    name: 'petro',
+    age: 33
+}
