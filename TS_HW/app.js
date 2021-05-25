@@ -58,3 +58,4 @@ verhovnaRadaI.addNewParty(molodo);
 verhovnaRadaI.showMoneyTakerSuperstarOfAll();
 console.log(verhovnaRadaI.showMoneyTakerSuperstarOfAll());
 console.log(mykola.takeMoney(1250));
+console.log(molodo.showAllDeputies());
