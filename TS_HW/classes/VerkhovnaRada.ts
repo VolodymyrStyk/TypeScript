@@ -5,7 +5,7 @@ export class VerkhovnaRada {
     radaParties: Array<Party>;
     radaSpeaker: Deputy;
 
-    constructor(radaParties, radaSpeaker) {
+    constructor(radaParties: Array<Party>, radaSpeaker: Deputy) {
         this.radaParties = radaParties;
         this.radaSpeaker = radaSpeaker;
     }
@@ -22,12 +22,12 @@ export class VerkhovnaRada {
         return this.radaParties;
     }
 
-    showSomeParty(party): Party | Array<Party> {
+    showSomeParty(party: Party): Party | Array<Party> {
         return this.radaParties.filter(value => value === party);
     }
 
     showMoneyTakerSuperstarOfAll(): Deputy {
-        let arrMoneyTaker = [];
+        let arrMoneyTaker: Array<Deputy> | Deputy = [];
         for (const parties of this.radaParties) {
             arrMoneyTaker.push(parties.showMoneyTakerSuperstar());
         }

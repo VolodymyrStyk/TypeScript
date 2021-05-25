@@ -12,7 +12,7 @@ var Deputy = /** @class */ (function () {
         this.minSum = minSum;
     }
     Deputy.prototype.takeMoney = function (sum) {
-        var deputyAction = 'Deputy is onesty';
+        var deputyAction = 'Deputy is honesty';
         if (this.isTakeMoney) {
             if (this.minSum > sum) {
                 deputyAction = 'fail! Deputy didn"t take money';

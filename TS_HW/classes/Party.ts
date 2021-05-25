@@ -5,7 +5,7 @@ export class Party {
     mainMember: Deputy;
     partyMembers: Array<Deputy>;
 
-    constructor(name, mainMember, partyMembers) {
+    constructor(name: string, mainMember: Deputy, partyMembers: Array<Deputy>) {
         this.name = name;
         this.mainMember = mainMember;
         this.partyMembers = partyMembers;

@@ -50,7 +50,7 @@ kryvda.showAllWhoTakeMoney();
 // delParty(Party) - метод який дозволяє вдалит певну партію з Ради типу Party.
 // showAllParties() - виводить масив обєктів всіх партій Ради.
 // showSomeParty(Party) - дозволяє вивести конкретну партії з Ради
-// showMoneyTakerSuperstarAll() - виводить головного хабарника Ради.
+// showMoneyTakerSuperstarOfAll() - виводить головного хабарника Ради.
 //
 var verhovnaRadaI = new VerkhovnaRada_1.VerkhovnaRada([zeleno, pravda, kryvda], mykola);
 verhovnaRadaI.addNewParty(molodo);

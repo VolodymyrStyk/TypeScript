@@ -6,7 +6,7 @@ export class Deputy {
     minSum: number;
     isTakeMoney: boolean;
 
-    constructor(name, age, gender, onestyLevel, minSum) {
+    constructor(name: string, age: number, gender: string, onestyLevel: number, minSum: number) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -15,8 +15,8 @@ export class Deputy {
         this.minSum = minSum;
     }
 
-    takeMoney(sum): string {
-        let deputyAction: string = 'Deputy is onesty';
+    takeMoney(sum:number): string {
+        let deputyAction: string = 'Deputy is honesty';
         if (this.isTakeMoney) {
             if (this.minSum > sum) {
                 deputyAction = 'fail! Deputy didn"t take money';
