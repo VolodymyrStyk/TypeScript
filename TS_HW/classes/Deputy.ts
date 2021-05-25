@@ -23,7 +23,7 @@ export class Deputy {
             if (this.minSum > sum) {
                 deputyAction = 'fail! Deputy didn"t take money';
             }
-            if (sum > this.minSum && sum < this.minSum * 1.1) {
+            if (sum > this.minSum && sum < this.minSum * (1+(this.onestyLevel/100))) {
                 deputyAction = 'thinking! Deputy didn"t take money it is not enough!';
             }
             if (sum > this.minSum * 1.1) {

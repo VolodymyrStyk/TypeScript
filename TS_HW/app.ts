@@ -59,3 +59,5 @@ const verhovnaRadaI = new VerkhovnaRada([zeleno, pravda, nepravda], mykola);
 verhovnaRadaI.addNewParty(molodo);
 verhovnaRadaI.showMoneyTakerSuperstarOfAll();
 console.log(verhovnaRadaI.showMoneyTakerSuperstarOfAll());
+console.log(mykola.takeMoney(1250));
+
