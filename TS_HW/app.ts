@@ -42,8 +42,8 @@ const zeleno: Party = new Party('Zeleno', ivan, [ivan, petro, vasya]);
 const molodo: Party = new Party('Molodo', mykola, [mykola, olya]);
 molodo.addNewDeputy(viktor);
 const pravda: Party = new Party('Pravda', vova, [taras, igor, vova]);
-const kryvda: Party = new Party('Kryvda', maria, [olena, vika, maria]);
-kryvda.showAllWhoTakeMoney();
+const nepravda: Party = new Party('Nepravda', maria, [olena, vika, maria]);
+nepravda.showAllWhoTakeMoney();
 //
 // створюємо партії class VerkhovnaRada маємо задати 2 поля.
 // radaParties - записуємо масив партій які будуть в даній Раді Array<Party> -> [party1,...]
@@ -54,7 +54,7 @@ kryvda.showAllWhoTakeMoney();
 // showSomeParty(Party) - дозволяє вивести конкретну партії з Ради
 // showMoneyTakerSuperstarOfAll() - виводить головного хабарника Ради.
 //
-const verhovnaRadaI: VerkhovnaRada = new VerkhovnaRada([zeleno, pravda, kryvda], mykola);
+const verhovnaRadaI: VerkhovnaRada = new VerkhovnaRada([zeleno, pravda, nepravda], mykola);
 verhovnaRadaI.addNewParty(molodo);
 verhovnaRadaI.showMoneyTakerSuperstarOfAll();
 console.log(verhovnaRadaI.showMoneyTakerSuperstarOfAll());
