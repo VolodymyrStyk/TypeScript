@@ -23,7 +23,6 @@ export class Party {
         return this.partyMembers;
     }
 
-
     showAllWhoTakeMoney(): Array<Deputy> | Deputy {
         return this.partyMembers.filter(value => value.isTakeMoney === true);
     }
