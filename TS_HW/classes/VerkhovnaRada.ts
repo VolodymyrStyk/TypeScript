@@ -22,7 +22,7 @@ export class VerkhovnaRada {
         return this.radaParties;
     }
 
-    showSomeParty(party: Party): Party | Array<Party> {
+    showSomeParty(party: Party):Array<Party> {
         return this.radaParties.filter(value => value === party);
     }
 
